@@ -1,0 +1,141 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: calculate_sum
+  examples: |
+    - what is [num1](3) plus [num2](4)?
+    - add [num1](3) and [num2](4)
+    - [num1](3) plus [num2](4)
+    - [num1](3) add [num2](4)
+    - What is [3](num1) plus [4](num2)?
+    - Can you add [5](num1) and [2](num2) for me?
+    - Add [7](num1) and [9](num2) please.
+    - What is [10](num1) plus [20](num2)?
+    - Add [5](num1) to [8](num2).
+    - Calculate the sum of [4](num1) and [6](num2).
+    - What is [25](num1) + [35](num2)?
+    - Can you add [2](num1) and [3](num2) for me?
+
+- intent: calculate_difference
+  examples: |
+    - What is [7](num1) minus [3](num2)?
+    - Subtract [10](num2) from [20](num1).
+    - What is [30](num1) minus [15](num2)?
+    - Calculate the difference between [8](num1) and [4](num2).
+    - What is [50](num1) - [20](num2)?
+    - How much is [10](num1) minus [5](num2)?
+    - Subtract [6](num2) from [15](num1).
+    - What is [100](num1) - [40](num2)?
+
+- intent: calculate_product
+  examples: |
+    - What is [2](num1) times [3](num2)?
+    - Calculate the product of [5](num1) and [8](num2).
+    - What is [10](num1) multiplied by [4](num2)?
+    - Multiply [6](num1) and [9](num2) please.
+    - What is [7](num1) x [3](num2)?
+    - How much is [2](num1) times [6](num2)?
+    - Calculate [8](num1) times [11](num2).
+    - What is [15](num1) multiplied by [4](num2)?
+
+- intent: calculate_quotient
+  examples: |
+    - What is [8](num1) divided by [2](num2)?
+    - Divide [15](num1) by [3](num2).
+    - What is [20](num1) divided by [4](num2)?
+    - Calculate the quotient of [30](num1) and [5](num2).
+    - What is [100](num1) / [10](num2)?
+    - How much is [50](num1) divided by [5](num2)?
+    - Divide [36](num1) by [6](num2).
+    - What is [16](num1) divided by [2](num2)?
+
+- regex: num1
+  examples: |
+    - [5](num1)
+    - [10](num1)
+    - [7](num1)
+
+- regex: num2
+  examples: |
+    - [2](num2)
+    - [6](num2)
+    - [9](num2)

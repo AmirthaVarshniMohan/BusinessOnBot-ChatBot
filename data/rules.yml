@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Handle sum
+  steps:
+  - intent: calculate_sum
+  - action: action_calculate_sum
+
+- rule: Handle difference
+  steps:
+  - intent: calculate_difference
+  - action: action_calculate_diff
+
+- rule: Handle product
+  steps:
+  - intent: calculate_product
+  - action: action_calculate_prod
+
+- rule: Handle quotient
+  steps:
+  - intent: calculate_quotient
+  - action: action_calculate_quo
